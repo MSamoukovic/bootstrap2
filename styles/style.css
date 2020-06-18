@@ -1,0 +1,37 @@
+body{
+    font-family: 'Lato', sans-serif;    
+    font-weight: lighter!important;
+    color:#606060;
+}
+.btnColor{
+    background-color: #606060;
+}
+.hrWidth{
+    width: 200px;
+}
+.sansPro{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+}
+h2{
+    font-size: 40px!important;
+}
+.btnColorLight{
+    background-color: #ebebeb;
+    color:#606060;
+}
+.starColor{
+    color: #ebebeb;
+}
+p{
+    font-size: 16px!important;
+}
+.card{
+    border: white!important;
+}
+img{
+    border-radius: 0px!important;
+}
+a{
+    color:#606060;
+}
