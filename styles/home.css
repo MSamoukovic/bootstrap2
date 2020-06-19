@@ -1,0 +1,23 @@
+@media screen and (min-width: 991px) {
+    .descriptionImg{
+        width:162px;
+        height: 132px;
+    }
+    .productImage{
+        width: 271px;
+        height: 110px;
+    }
+    .productBigImage{
+        width: 271px;
+    }
+   
+    .inputSearch{
+        width: 299px;
+    }
+    .card{
+        width: 271px;
+    }
+    .inputSearch{
+        width: 299px;
+    }
+}
