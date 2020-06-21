@@ -1,0 +1,19 @@
+@media screen and (min-width: 991px) {
+	.py-lg-3{
+		padding-top:30px!important;
+		padding-bottom:30px!important;
+	}
+	
+	.pb-lg-3{
+		padding-bottom:30px!important;
+	}
+	
+	.pt-lg-3{
+		padding-top:30px!important;
+	}
+}
+
+.buttonSize{
+	width:182px;
+	height:41px;
+}
