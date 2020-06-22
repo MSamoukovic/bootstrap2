@@ -53,9 +53,23 @@
             </header>
         </div>
 		<div class="border border-seconcary">
-		something
+			<div class="row m-0 px-lg-5">
+			<div class="col-12 py-lg-5 px-0 ">
+				<nav>
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><h3>1. Shopping Cart</h3></a>
+						<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><h3>2. Shipping Details</h3></a>
+						<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><h3>3. Payment Options</h3></a>
+					</div>
+				</nav>
+				
+			
+			</div>
 		</div>
-		<div class="row m-0 px-lg-5 pt-lg-5 ">
+		</div>
+		<div class="row m-0 py-5 px-0 tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-home"  aria-labelledby="nav-home-tab">
+					<div class="row m-0 px-lg-5  " >
 		<div class="col-12 col-lg-8 p-0  pr-lg-5">
 		<div class="border-bottom">
 				<h3 class="m-0 pb-2">Shopping Cart</h2>
@@ -67,9 +81,9 @@
                                     <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
                                 </div>
                                 <div class="pl-4">
-                                    <p class="text-uppercase m-0 p18 sansPro">Product Name</p>
-									<p class="m-0"> Lorem ipsum dolor sit amet, consectetur </p>
-                                    <p class="m-0 p21 sansPro">$300</p>
+                                    <p class="text-uppercase m-0 p18 sansPro p21">Product Name</p>
+									<p class="m-0 sansPro"> Lorem ipsum dolor sit amet, consectetur </p>
+                                    <p class="m-0 p21 sansPro p21">$300</p>
                                 </div>
                             </div>
 				<div class="d-flex align-items-end">
@@ -138,13 +152,147 @@
 		</div>
 		<div class="row m-0">
 		<div class="col-12 p-0 pt-lg-3">
-			<button type="button" class="btn btnColor sansPro buttonSize mr-2">Next</button>
-			<button type="button" class="btn btnColorLight sansPro buttonSize  pl-3">Cancel</button>
+			<button type="button" class="btn btnColor sansPro buttonSize mr-2 borderRadius">Next</button>
+			<button type="button" class="btn btnColorLight sansPro buttonSize  pl-3 borderRadius">Cancel</button>
 
 		</div>
 		</div>
 		</div>
+					</div>
+					<div class="tab-pane fade px-lg-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<div class="row m-0 pt-lg-5 ">
+		<div class="col-12 col-lg-8 p-0 pr-lg-4">
+		<div class="border-bottom">
+				<h3 class="m-0 pb-2">Shipping Details</h2>
+		</div>
 		
+		<div class="row m-0 border-bottom">
+		<div class="col-6 p-0 pr-lg-3 py-lg-3">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="First Name">
+             </div>
+		</div>
+		<div class="col-6 p-0 pl-lg-1 py-lg-3">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="Last Name">
+             </div>
+		</div>
+		<div class="col-12 p-0">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="Address">
+             </div>
+		</div>
+		<div class="col-12 p-0 py-lg-3">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="Address 2">
+             </div>
+		</div>
+		
+		 <div class="col-6 p-0 pr-lg-1">
+               <div class="form-group m-0">
+                                        <select id="inputRole"
+                                            class="form-control  form-control-lg rounded-0 borderColor ">
+                                            <option selected>County</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+		<div class="col-6 p-0 pl-lg-1">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="City">
+             </div>
+		</div>
+		<div class="col-6 p-0 py-lg-3 pr-lg-1">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="Zip/Postal Code">
+             </div>
+		</div>
+		<div class="col-6 p-0 py-lg-3 pl-lg-1">
+		<div class="form-group m-0">
+            <input type="text" class="form-control form-control-lg rounded-0 borderColor"  placeholder="Phone Number">
+             </div>
+		</div>
+		</div>
+		<div class="row m-0 py-lg-3 border-bottom">
+		<div class="col-6 p-0  border pr-lg-1">
+			<div class="custom-control custom-radio custom-control-inline border">
+			  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+			  <label class="custom-control-label p18" for="customRadioInline1">Free Shipping</label>
+			</div>
+		</div>
+		<div class="col-6 p-0 border  pl-lg-1">
+			<div class="custom-control custom-radio custom-control-inline border">
+			  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input ">
+			  <label class="custom-control-label p18 d-flex flex-column" for="customRadioInline2">Next Day Delivery - $2<br>
+			  dds
+			  </label>
+			 
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="col-12 col-lg-4 p-0 pl-lg-4 d-flex flex-column">    
+		<div class="border">
+			<div class="border-bottom">
+					<h3 class="m-0 pb-2">Summary</h2>
+				</div>
+					
+				<div class=" d-flex flex-row  py-lg-3">
+                                <div class="d-flex">
+                                    <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
+                                </div>
+                                <div class="pl-4">
+                                    <p class="text-uppercase m-0 p18 sansPro">Product Name</p>
+                                    <p class="m-0 p21 sansPro">$300</p>
+                                </div>
+                </div>
+				<div class=" d-flex flex-row pb-lg-3">
+                                <div class="d-flex">
+                                    <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
+                                </div>
+                                <div class="pl-4">
+                                    <p class="text-uppercase m-0 p18 sansPro">Product Name</p>
+                                    <p class="m-0 p21 sansPro">$300</p>
+                                </div>
+                </div>
+				<div class="border py-2">
+				 something
+				</div>
+				<div class="border-top border-bottom d-flex flex-column py-2">
+				<div class="d-flex justify-content-between my-auto ">
+					<p class="m-0 text-uppercase">Subtotal</p>
+					<p class="m-0">$600</p>
+				</div>
+				<div class="d-flex justify-content-between my-auto">
+					<p class="m-0 text-uppercase py-2">Shipping</p>
+					<p class="m-0 text-uppercase py-2">Free</p>
+				</div>
+				<div class="d-flex justify-content-between my-auto">
+					<p class="m-0 text-uppercase">Taxes</p>
+					<p class="m-0">$13</p>
+				</div>
+				</div>
+				<div class=" d-flex justify-content-between">
+					<h3 class="m-0 text-uppercase my-auto py-2">Total</h3>
+					<h3 class="m-0 my-auto">$613</h3>
+				</div>
+		</div>
+		</div>
+		
+	
+		
+		</div>
+		<div class="row m-0">
+		<div class="col-12 p-0 py-lg-3">
+			<button type="button" class="btn btnColor sansPro buttonSize mr-2">Next</button>
+			<button type="button" class="btn btnColorLight sansPro buttonSize  pl-3">Cancel</button>
+		</div>
+		</div>
+					</div>
+					<div class="tab-pane fade px-lg-5" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					h
+					</div>
+				</div>
 		   <div class="d-flex flex-column border py-3">
                 <div class="align-self-center">
                     <ul class="nav sansPro p-0 float-right">

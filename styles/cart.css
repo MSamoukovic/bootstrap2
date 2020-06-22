@@ -17,3 +17,10 @@
 	width:182px;
 	height:41px;
 }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+	border-color: white white black white!important;
+}
+
+
