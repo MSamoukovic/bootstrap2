@@ -20,8 +20,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="stylesheet">s
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
 
@@ -31,28 +32,38 @@
 <body class="bg-light  d-flex justify-content-center">
     <div class="container border p-0 bg-white">
         <div class="">
-            <header class="row m-0 mx-lg-5 mx-4 pt-1">
-                <div class="col-12 col-lg-5 p-0 d-flex justify-content-between">
+            <header class="row m-0 mx-lg-5 mx-2 pt-1 f-flex justify-content-lg-between">
+                <div>
                     <i class="fas fa-image fa-2x my-auto px-2"></i>
-                    <div class="input-group inputSearch">
-                        <span class="input-group-text bg-white border-right-0 rounded-0  border-secondary"><i
-                                class="fas fa-search fa-1x my-auto text-secondary"></i></span>
-                        <input type="text" class="form-control border-left-0 rounded-0 border-secondary "
-                            placeholder="Search ...">
-                    </div>
                 </div>
                 <div class="col-12 col-lg-7 p-0 mt-2 mt-lg-0 d-flex justify-content-lg-between ">
                     <div class="ml-lg-auto my-auto">
                         <ul class="nav sansPro p-0 float-right">
-                            <li class="border-right border-secondary px-lg-4 px-2"><a href="#">Home</a></li>
-                            <li class="border-right border-secondary px-lg-4 px-2"><a href="#">About</a></li>
-                            <li class="border-right border-secondary px-lg-4 px-2"><a href="#">Shop</a></li>
-                            <li class="px-lg-4 px-2"><a href="#">Help</a></li>
+                            <li class="py-2">
+                                <div class="border-right px-lg-4 px-2">
+                                    <a href="#">Home</a>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="border-right px-lg-4 px-2">
+                                    <a href="#">About</a>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="border-right px-lg-4 px-2">
+                                    <a href="#">Shop</a>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="px-lg-4 px-2">
+                                    <a href="#">Help</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="d-flex">
-                        <button type="button" class="btn text-white btnYourCart my-auto">
-                            <span class="btn-label"><i class="fas fa-shopping-cart pr-3"></i></span>Your Cart
+                        <button type="button" class="btn text-white btnYourCart my-auto borderRadius p-0">
+                            <span class="btn-label"><i class="fas fa-shopping-cart  fa-xs borderRadius pr-2"></i></span>Your Cart
                         </button>
                     </div>
                 </div>
@@ -73,14 +84,112 @@
                     </div>
                 </div>
                 <div class="row justify-content-center  p-1 py-lg-5 py-4">
-                    <button type="button" class="btn btn-lg btnColor text-white sansPro px-5">Shop Now</button>
+                    <button type="button" class="btn btn-lg btnColor text-white sansPro px-5 borderRadius">Shop
+                        Now</button>
                 </div>
             </div>
         </div>
         <div>
             <h2 class="text-center m-0 pt-lg-5 pt-lg-3">Featured Products</h2>
-            <div>
-                swiper
+            <div class="mt-4">
+                  <div id="carouselExampleControls" class="carousel slide px-lg-5" data-ride="carousel"  data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row m-0">
+                            <div class="col-6 p-0 d-flex ">
+                                <div class="card swiperCard">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-6 p-0 d-flex d-flex">
+                                <div class="card swiperCard ml-auto">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                    </div>
+                            </div>
+                      </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row m-0">
+                            <div class="col-6  d-flex">
+                                <div class="card swiperCard mx-auto">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-6  d-flex">
+                                <div class="card swiperCard mx-auto">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row m-0">
+                            <div class="col-6  d-flex">
+                                <div class="card swiperCard mx-auto">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-6  d-flex">
+                                <div class="card swiperCard mx-auto">
+                                    <img class="card-img-top swiperImage  border" src="images/image1.png" alt="Card image cap">
+                                    <div class="card-body px-0">
+                                      <p class="card-text m-0">
+                                          <h5 class="text-uppercase m-0 text-center sansPro">Product Name</h5>
+                                          <h5 class="m-0 text-center pt-1 sansPro">$300</h5>
+                                      </p>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev pl-3" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <svg class="bi bi-caret-left-fill" width="1.7em" height="1.7em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next pr-3" href="#carouselExampleControls" role="button" data-slide="next">
+                        <svg class="bi bi-caret-right-fill" width="1.7em" height="1.7em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+
+
             </div>
         </div>
         <div class=" border-top border-bottom">
@@ -89,32 +198,33 @@
                     <h2 text-start> Newsletter</h2>
                 </div>
                 <div class="row m-0 pb-lg-5">
-                    <div class="col-12 col-lg-6 pl-lg-0 pr-lg-5 p-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu
+                    <div class="col-12 col-lg-6 pl-lg-0 pr-lg-4 p-0">
+                        <p class="sansPro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+                            vulputate eu
                             pharetra nec, mattis ac neque.</p>
                     </div>
-                    <div class="col-12 col-lg-6  p-0">
+                    <div class="col-12 col-lg-6  p-0 pl-lg-4">
                         <div class="form-group d-flex flex-lg-row  flex-column w-100">
                             <input type="email"
-                                class="form-control form-control-lg rounded-0 border border-secondary pr-5 mb-2 mb-lg-0"
+                                class="form-control form-control-lg rounded-0 border border-secondary pr-5 mb-2 mb-lg-0 pl-lg-4 inputEmail sansPro"
                                 id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
                             <button type="button"
-                                class="btn btn-lg btnColorLight sansPro px-lg-5 ml-0 ml-lg-3">Subscribe</button>
+                                class="btn btn-lg btnColorLight sansPro ml-0 ml-lg-3 subscribeButton borderRadius">Subscribe</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <div class="px-lg-5 px-4 row  m-0 py-5 d-flex justify-content-between">
+            <div class="px-lg-5 px-4 row  m-0 py-5 d-flex justify-content-between sansPro">
                 <div class="col-12 col-lg-auto p-lg-0 py-lg-3 p-0">
                     <div class="card border">
                         <img class="card-img-top border border-secondary productBigImage " src="images/image3.png"
                             alt="Card image cap">
                         <div class="card-body d-flex flex-row justify-content-between p-0 pt-1">
                             <div>
-                                <p class="text-uppercase m-0">Product Name</p>
-                                <p class="m-0">$300</p>
+                                <h5 class="text-uppercase m-0">Product Name</h5>
+                                <h5 class="m-0 pt-1">$300</h5>
                             </div>
                             <div>
                                 <i class="fas fa-star text-secondary"></i>
@@ -213,47 +323,55 @@
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class=" row  m-0 p-3">
-                <div class="col-12 col-lg-4 border-border-secondary p-lg-4 p-3 d-flex flex-column">
+        <div class="border-bottom">
+            <div class=" row  m-0 px-lg-5 py-2 sansPro">
+                <div class="col-12 col-lg-4 border-border-secondary d-flex flex-column">
                     <div class="row m-0">
-                        <div class="col-12 col-lg-6 border-bottom border-secondary d-flex">
-                            <i class="fas fa-image fa-3x mx-auto p-lg-4 p-2"></i>
+                        <div class="col-12 col-lg-5 p-0 d-flex">
+                            <div class="border-bottom px-4 py-3">
+                                <i class="fas fa-image fa-2x py-lg-4 p-2"></i>
+
+                            </div>
                         </div>
-                        <div class="col-12 p-0 pt-1">
-                            <p class="m-0">1717 Harrison St, San Francisco,CA 94103, USA</p>
+                        <div class="col-10 p-0 pt-1">
+                            <p class="m-0">1717 Harrison St, San Francisco, CA 94103, USA</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 border-border-secondary d-flex flex-row p-4 justify-content-between">
-                    <div class="border border-secondary">
-                        <p class="text-uppercase ">Main Menu</p>
-                        <p class="m-0">Home</p>
+                <div class="col-6 col-lg-2 p-lg-4 p-3">
+                    <div>
+                        <p class="text-uppercase mb-3">Main Menu</p>
+                        <p class="m-0">Home</h5>
                         <p class="m-0">About</p>
                         <p class="m-0">Shop</p>
                         <p class="m-0">Help</p>
                     </div>
-                    <div class="border border-secondary">
-                        <p class="text-uppercase ">Company</p>
-                        <p class="m-0">The Company</p>
-                        <p class="m-0">Careers</p>
-                        <p class="m-0">Press</p>
-                    </div>
                 </div>
-                <div class="col-12 col-lg-4 border-border-secondary d-flex flex-row p-4 justify-content-between">
-                    <div class="border border-secondary">
-                        <p class="text-uppercase ">Discover</p>
-                        <p class="m-0">The Team</p>
-                        <p class="m-0">Our History</p>
-                        <p class="m-0">Brand Motto</p>
-                    </div>
-                    <div class="border border-secondary">
-                        <p class="text-uppercase ">Find Us On</p>
-                        <p class="m-0">Facebook</p>
-                        <p class="m-0">Twitter</p>
-                        <p class="m-0">Instagram</p>
-                    </div>
+                <div class="col-6 col-lg-2  p-lg-4 p-3">
+                    <p class="text-uppercase mb-3">Company</p>
+                    <p class="m-0">The Company</p>
+                    <p class="m-0">Careers</p>
+                    <p class="m-0">Press</p>
                 </div>
+                <div class="col-6 col-lg-2  p-lg-4 p-3">
+                    <p class="text-uppercase mb-3">Discover</p>
+                    <p class="m-0">The Team</p>
+                    <p class="m-0">Our History</p>
+                    <p class="m-0">Brand Motto</p>
+                </div>
+                <div class="col-6 col-lg-2  p-lg-4 p-3">
+                    <p class="text-uppercase ">Find Us On</p>
+                    <p class="m-0">Facebook</p>
+                    <p class="m-0">Twitter</p>
+                    <p class="m-0">Instagram</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 pt-1 px-lg-5">
+            <div class="col-auto">
+                <span class="glyphicon glyphicon-envelope p3-2">
+                    <i class="fas fa-copyright fa-1x text-secondary"></i>
+                </span> Your Company Name
             </div>
         </div>
     </div>

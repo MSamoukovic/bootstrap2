@@ -17,7 +17,26 @@
     .card{
         width: 271px;
     }
-    .inputSearch{
-        width: 299px;
+    .inputEmail{
+        width: 275px;
+    }
+
+    .subscribeButton{
+        width: 145px;
+    }
+
+    .swiperImage{
+        width: 436px!important;
+        height: 259px!important;
+    }
+    .swiperCard{
+        width: 436px!important;
     }
 }
+
+
+.carousel-control-next, .carousel-control-prev {
+    width: auto!important;
+    opacity: 1;
+}
+

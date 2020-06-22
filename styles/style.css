@@ -15,6 +15,8 @@ body{
     background-color: #606060;
     color:white;
     font-size: 16px;
+    width: 109px!important;
+    height: 30px!important;
 }
 
 .sansPro{
@@ -25,22 +27,13 @@ body{
 .btnColorLight{
     background-color: #ebebeb;
     color:#606060;
+    /* letter-spacing: 1px; */
 }
+
 .starColor{
     color: #ebebeb;
 }
 
-p{
-    font-size: 16px!important;
-}
-
-.p18{
-    font-size: 18px!important;
-}
-
-.p21{
-    font-size: 21px!important;
-}
 img{
     border-radius: 0px!important;
 }
@@ -54,14 +47,24 @@ a{
     height: 2px;
 }
 
+
+.borderRadius{
+    border-radius: 2px!important;
+}
+
 .border{
     border-color:#7a7a7a!important;
 }
 
-    .imageProduct{
+.imageProduct{
         width: 111px;
         height: 84px;
-    }
+}
+
+.card{
+    border: white!important;
+}
+
 
 
 @media screen and (min-width: 991px) {
@@ -104,17 +107,32 @@ a{
     .pr-lg-4{
         padding-right: 26px!important;
     }
+
+    .px-lg-4{
+        padding-left: 26px!important;
+        padding-right: 26px!important;
+    }
     h2{
         font-size: 40px!important;
+        letter-spacing: 2px;
     }
 	h3{
 		font-size:27px;
-	}
-    .card{
-        border: white!important;
     }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+    
+
+   
 }
 
 @media (max-width: 991px) 
 {
 }
+
