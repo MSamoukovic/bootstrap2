@@ -11,6 +11,10 @@
 	.pt-lg-3{
 		padding-top:30px!important;
 	}
+	.inputNumber{
+		height: 41px;
+		width: 108px;
+	}
 }
 
 .buttonSize{
@@ -19,8 +23,12 @@
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-
-	border-color: white white black white!important;
-}
-
+		border-color: white white black white!important;
+		/* font-weight: 900!important; */
+		font-style: italic;
+		color:black;
+	}
+input[type=number]::-webkit-inner-spin-button {
+	opacity: 1;
+  }
 

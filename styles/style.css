@@ -7,7 +7,8 @@ body{
 .btnColor{
     background-color: #606060;
     color:white;
-    font-size: 18px;
+    font-size: 18px!important;
+    letter-spacing: 1px;
 }
 
 
@@ -27,7 +28,9 @@ body{
 .btnColorLight{
     background-color: #ebebeb;
     color:#606060;
-    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
+    font-size: 18px!important;
+
 }
 
 .starColor{
@@ -65,7 +68,30 @@ a{
     border: white!important;
 }
 
+.navLinks{
+    width: 96px;
+}
 
+.line{
+    height:50%;
+    margin-bottom:25px;
+    background-color:#c0c0c0;
+    width:2px;
+}
+
+.backgroundColor{
+    background-color: rgba(146, 146, 146, 5%);
+}
+.fontSize26{
+    font-size: 26px!important;
+}
+.fontSize18{
+    font-size: 18px!important;
+}
+
+.letterSpacing{
+    letter-spacing: 2px;
+}
 
 @media screen and (min-width: 991px) {
     body{
@@ -77,27 +103,27 @@ a{
      
     }
     .pb-lg-5{
-        padding-bottom: 51px!important;
+        padding-bottom: 50px!important;
     }
     
     .pt-lg-5{
-        padding-top: 51px!important;
+        padding-top: 50px!important;
     }
     
     .py-lg-5{
-        padding-bottom: 51px!important;
-        padding-top: 51px!important;
+        padding-bottom: 50px!important;
+        padding-top: 50px!important;
     }
     .px-lg-5{
-        padding-left: 51px!important;
-        padding-right: 51px!important;
+        padding-left: 50px!important;
+        padding-right: 50px!important;
     }
     .pl-lg-5{
-        padding-left: 51px!important;
+        padding-left: 50px!important;
     }
     
     .pr-lg-5{
-        padding-right: 51px!important;
+        padding-right: 50px!important;
     }
     
     .pl-lg-4{
@@ -117,7 +143,11 @@ a{
         letter-spacing: 2px;
     }
 	h3{
-		font-size:27px;
+        font-size:27px;
+    }
+
+    h4{
+        font-size:21px;
     }
 
     h5{
@@ -127,13 +157,7 @@ a{
     h6{
         font-size: 14px;
     }
-	
-	.p21{
-		font-size:21px;
-	}
-    
 
-   
 }
 
 @media (max-width: 991px) 
