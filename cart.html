@@ -25,19 +25,21 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/cart.css">
 	<link rel="stylesheet" href="styles/shipping.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
 	<title>Cart</title>
 </head>
 
 <body class="bg-light  d-flex justify-content-center">
-	<div class="container border p-0 bg-white">
+	<div class="container border-top border-bottom border-left border-right p-0 bg-white">
 		<div class="py-3">
 			<header class="row m-0 pl-lg-5 pl-2 pt-1 f-flex justify-content-lg-between">
-				<div class="col-5 p-0  d-flex flex-row">
+				<div class="col-5 p-0 d-none d-lg-flex flex-row">
 					<i class="fas fa-image fa-1x my-auto px-4"></i>
 				</div>
-				<div class="col-12 col-lg-7 p-0 mt-2 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between ">
+				<div
+					class="col-12 col-lg-7 p-0 mt-2 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between justify-content-center ">
 					<div class=" d-flex flex-row">
 						<div class="navLinks d-flex">
 							<a href="index.html" class="sansPro mx-auto">Home</a>
@@ -64,69 +66,71 @@
 				</div>
 			</header>
 		</div>
-		<div class="border border-seconcary">
-			<div class="row m-0 px-lg-5">
+		<div class="border-top backgroundColor">
+			<div class="row m-0 px-lg-5 pb-lg-4">
 				<div class="col-12 py-lg-5 px-0 ">
 					<nav>
 						<div class="nav nav-tabs nav-fill  row m-0" id="nav-tab" role="tablist">
-							<a class="nav-item nav-link active col-4 pr-lg-4 pl-0 pb-0" id="nav-home-tab"
-								data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+							<a class="nav-item nav-link active col-12 col-lg-4 pr-lg-4 pr-3 pl-3 pl-lg-0 pb-0 d-flex"
+								id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
 								aria-selected="true">
-								<h4 class="letterSpacing border-bottom bb">1. Shopping Cart</h4>
+								<h4 class="tabName letterSpacing m-0 w-100 mt-auto pb-4">1. Shopping Cart</h4>
 							</a>
-							<a class="nav-item nav-link col-4 " id="nav-profile-tab" data-toggle="tab"
-								href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-								<h4 class="letterSpacing border-bottom">2. Shipping Details</h4>
+							<a class="nav-item nav-link col-12 col-lg-4 pb-0 d-flex" id="nav-profile-tab"
+								data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+								aria-selected="false">
+								<h4 class="tabName letterSpacing m-0 w-100 mt-auto pb-4">2. Shipping Details</h4>
 							</a>
-							<a class="nav-item nav-link col-4 pl-lg-4" id="nav-contact-tab" data-toggle="tab"
-								href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
-								<h4 class="letterSpacing border-bottom">3. Payment Options</h4>
+							<a class="nav-item nav-link col-12 col-lg-4 pl-lg-4 pr-lg-0 pr-3 pb-0 d-flex"
+								id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+								aria-controls="nav-contact" aria-selected="false">
+								<h4 class="tabName letterSpacing m-0 w-100 mt-auto pb-4">3. Payment Options</h4>
 							</a>
 						</div>
 					</nav>
-
-
 				</div>
 			</div>
 		</div>
-		<div class="row m-0 py-5 px-0 tab-content" id="nav-tabContent">
+		<div class="row m-0 py-5 px-lg-0 px-3 tab-content shortDiv" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-home" aria-labelledby="nav-home-tab">
 				<div class="row m-0 px-lg-5  ">
-					<div class="col-12 col-lg-8 p-0  pr-3 ">
+					<div class="col-12 col-lg-8 p-0  pr-0 pr-lg-3 ">
 						<div class="border-bottom">
-							<h3 class="m-0 pb-2 fontSize26">Shopping Cart</h2>
+							<h3 class="m-0 pb-2 fontSize26 letterSpacing">Shopping Cart</h2>
 						</div>
 						<div class="d-flex flex-column">
-							<div class="d-flex justify-content-between py-lg-3 ">
-								<div class=" d-flex flex-row ">
+							<div class="d-flex flex-column flex-lg-row justify-content-lg-between py-lg-3 py-3">
+								<div class=" d-flex flex-lg-row flex-column ">
 									<div class="d-flex">
 										<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
 									</div>
-									<div class="pl-4">
+									<div class="pl-lg-4 pl-0">
 										<h4 class="text-uppercase m-0 sansPro">Product Name</h4>
 										<p class="m-0 sansPro"> Lorem ipsum dolor sit amet, consectetur </p>
 										<h4 class="m-0 sansPro">$300</h4>
 									</div>
 								</div>
 								<div class="d-flex align-items-end">
-									<input type="number" class="form-control border rounded-0 inputNumber"
+									<input type="number"
+										class="form-control border rounded-0 inputNumber sansPro pl-4 fontSize18"
 										placeholder="1 pcs">
 								</div>
 							</div>
-							<div class="pb-lg-3 border-bottom">
-								<div class="d-flex justify-content-between">
-									<div class=" d-flex flex-row">
+							<div class="pb-lg-3 pb-3 border-bottom">
+								<div class="d-flex flex-column flex-lg-row justify-content-between">
+									<div class=" d-flex flex-lg-row flex-column">
 										<div class="d-flex">
 											<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
 										</div>
-										<div class="pl-4">
+										<div class="pl-lg-4 pl-0">
 											<h4 class="text-uppercase m-0 sansPro">Product Name</h4>
 											<p class="m-0"> Sed do eiusmod tempor incididunt ut labore et</p>
 											<h4 class="m-0 sansPro">$300</h4>
 										</div>
 									</div>
 									<div class=" d-flex align-items-end ">
-										<input type="number" class="form-control border rounded-0 inputNumber"
+										<input type="number"
+											class="form-control border rounded-0 inputNumber sansPro pl-4 fontSize18"
 											placeholder="1 pcs">
 									</div>
 								</div>
@@ -134,13 +138,13 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 p-0 pl-lg-4 d-flex">
-						<div class="ml-2 d-flex flex-column flex-grow-1">
+						<div class="ml-lg-2 ml-0 d-flex flex-column flex-grow-1">
 							<div class="border-bottom">
-								<h3 class="m-0 pb-2 fontSize26">Summary</h2>
+								<h3 class="m-0 pb-2 pt-2 pt-lg-0 fontSize26 letterSpacing">Summary</h2>
 							</div>
 
 							<div class="flex-grow-1 d-flex">
-								<h5 class="m-0 text-uppercase my-auto font-weight-bold sansPro py-3">Enter Coupon Code
+								<h5 class="m-0 text-uppercase my-auto font-weight-bold sansPro py-3 ">Enter Coupon Code
 								</h5>
 							</div>
 
@@ -172,7 +176,7 @@
 							<button type="button"
 								class="btn btnColor sansPro buttonSize mr-2 borderRadius">Next</button>
 							<button type="button"
-								class="btn btnColorLight sansPro buttonSize  pl-3 borderRadius">Cancel</button>
+								class="btn btnColorLight sansPro buttonSize pl-3 borderRadius mt-2 mt-lg-0">Cancel</button>
 
 						</div>
 					</div>
@@ -180,39 +184,41 @@
 			</div>
 			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 				<div class="row m-0 px-lg-5  ">
-					<div class="col-12 col-lg-8 p-0  pr-3 ">
-						<div class="border">
-							<h3 class="m-0 pb-2 fontSize26">Shipping Details</h2>
+					<div class="col-12 col-lg-8 p-0  pr-lg-3 pr-0 ">
+						<div class="border-bottom">
+							<h3 class="m-0 pb-2 fontSize26 letterSpacing">Shipping Details</h2>
 						</div>
-						<div class="d-flex flex-column">
-							<div class="d-flex justify-content-between py-lg-3 ">
+						<div class="d-flex flex-column py-2 py-lg-0">
+							<div class="d-flex flex-column flex-lg-row justify-content-lg-between py-lg-3 ">
 								<div class="shortInput">
 									<div class="form-group m-0 ">
-										<input type="text" class="form-control rounded-0 borderColor fontSize18 sansPro"
+										<input type="text"
+											class="form-control border rounded-0 borderColor fontSize18 sansPro"
 											placeholder="First Name">
 									</div>
 
 								</div>
-								<div class=" shortInput">
+								<div class=" shortInput pt-2 pt-lg-0">
 									<div class="form-group m-0">
-										<input type="text" class="form-control rounded-0 borderColor fontSize18 sansPro"
+										<input type="text"
+											class="form-control border rounded-0 borderColor fontSize18 sansPro"
 											placeholder="Last Name">
 									</div>
 								</div>
 							</div>
-							<div class="form-group m-0">
-								<input type="text" class="form-control rounded-0 borderColor fontSize18 sansPro"
+							<div class="form-group m-0 py-2 py-lg-0">
+								<input type="text" class="form-control border rounded-0 borderColor fontSize18 sansPro"
 									placeholder="Address">
 							</div>
 							<div class="form-group m-0  py-lg-3">
-								<input type="text" class="form-control  rounded-0 borderColor fontSize18 sansPro"
+								<input type="text" class="form-control border rounded-0 borderColor fontSize18 sansPro"
 									placeholder="Address 2">
 							</div>
-							<div class="d-flex justify-content-between">
+							<div class="d-flex flex-column flex-lg-row justify-content-lg-between">
 								<div class="shortInput">
-									<div class="form-group m-0">
+									<div class="form-group  m-0 py-2 py-lg-0">
 										<select id="inputRole"
-											class="form-control rounded-0 borderColor fontSize18 sansPro">
+											class="form-control border rounded-0 borderColor fontSize18 sansPro">
 											<option selected>County</option>
 											<option>...</option>
 										</select>
@@ -222,43 +228,55 @@
 								<div class=" shortInput">
 									<div class="form-group m-0">
 										<input type="text"
-											class="form-control   rounded-0 borderColor sansPro fontSize18"
+											class="form-control border rounded-0 borderColor sansPro fontSize18"
 											placeholder="City">
 									</div>
 								</div>
 							</div>
-							<div class="d-flex justify-content-between py-lg-3">
+							<div class="d-flex flex-column flex-lg-row justify-content-lg-between py-lg-3">
 								<div class=" shortInput">
-									<div class="form-group m-0">
+									<div class="form-group m-0 py-2 py-lg-0">
 										<input type="text"
-											class="form-control   rounded-0 borderColor sansPro fontSize18"
+											class="form-control border rounded-0 borderColor sansPro fontSize18"
 											placeholder="Zip/Postal Code">
 									</div>
 								</div>
 								<div class=" shortInput">
 									<div class="form-group m-0">
 										<input type="text"
-											class="form-control   rounded-0 borderColor sansPro fontSize18"
+											class="form-control border rounded-0 borderColor sansPro fontSize18"
 											placeholder="Phone Number">
 									</div>
 								</div>
 							</div>
-							<div class="d-flex justify-content-between py-lg-3 border-top border-bottom">
-								<div class="shortInput">
-									<div class="form-group m-0 border">
-										<div class="custom-control custom-radio custom-control-inline border">
+							<div
+								class="d-flex flex-column flex-lg-row justify-content-lg-between py-lg-3 py-2 border-top border-bottom">
+								<div class="shortInput py-2 py-lg-0">
+									<div class="form-group m-0 border d-flex btnColorLight">
+										<input type="radio" id="freeShipping" name="radioBtn" value="freeShipping"
+											class="my-auto mx-4">
+										<label for="freeShipping" class="sansPro fontSize18 m-0 py-3">Free Shipping<br>
+											<h6 class="pt-1">Between 2-5 working days</h6>
+										</label>
+										<!-- <div class="custom-control custom-radio custom-control-inline border">
 											<input type="radio" id="customRadioInline1" name="customRadioInline1"
 												class="custom-control-input">
 											<label class="custom-control-label sansPro fontSize18 py-3"
 												for="customRadioInline1">Free Shipping<br>
 												<h6>24 hours from checkout</h6>
 											</label>
-										</div>
+										</div> -->
 									</div>
 								</div>
 								<div class=" shortInput">
-									<div class="form-group m-0 border">
-										<div class="custom-control custom-radio custom-control-inline border">
+									<div class="form-group m-0 border d-flex">
+										<input type="radio" id="nextDayDelivery" name="radioBtn" value="nextDayDelivery"
+											class="my-auto mx-4">
+										<label for="nextDayDelivery" class="sansPro fontSize18 m-0 py-3">Next Day
+											Delivery - $20<br>
+											<h6 class="pt-1">24 hours from checkout</h6>
+										</label>
+										<!-- <div class="custom-control custom-radio custom-control-inline border">
 											<input type="radio" id="customRadioInline2" name="customRadioInline1"
 												class="custom-control-input ">
 											<label
@@ -266,24 +284,19 @@
 												for="customRadioInline2">Next Day Delivery - $20<br>
 												<h6>24 hours from checkout</h6>
 											</label>
-
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>
-
-
-
-
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 p-0 pl-lg-4 d-flex">
-						<div class="ml-2 d-flex flex-column flex-grow-1">
+						<div class="ml-0 ml-lg-2 d-flex flex-column flex-grow-1">
 							<div class="border-bottom">
-								<h3 class="m-0 pb-2 fontSize26">Summary</h2>
+								<h3 class="m-0 pb-2 fontSize26 letterSpacing">Summary</h2>
 							</div>
 							<div class="flex-grow-1 d-flex ">
-								<div class=" d-flex flex-row py-lg-3">
+								<div class=" d-flex flex-row py-lg-3 py-2">
 									<div class="d-flex">
 										<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
 									</div>
@@ -293,7 +306,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="flex-grow-1 d-flex  pb-lg-3">
+							<div class="flex-grow-1 d-flex  pb-lg-3 pb-2">
 								<div class=" d-flex flex-row ">
 									<div class="d-flex">
 										<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
@@ -305,10 +318,10 @@
 								</div>
 							</div>
 
-							<div class="flex-grow-1 d-flex border-top">
+							<div class="flex-grow-1 d-flex border-top pt-2 pt-lg-0">
 								<div class="form-group m-0 w-100 d-flex">
 									<select id="inputRole"
-										class="form-control rounded-0 borderColor fontSize18 sansPro my-auto noBorder pl-0">
+										class="form-control rounded-0 borderColor fontSize18 sansPro my-auto noBorder pl-0 text-uppercase">
 										<option selected>Have a voucher?</option>
 										<option>...</option>
 									</select>
@@ -343,15 +356,166 @@
 							<button type="button"
 								class="btn btnColor sansPro buttonSize mr-2 borderRadius">Next</button>
 							<button type="button"
-								class="btn btnColorLight sansPro buttonSize  pl-3 borderRadius">Cancel</button>
+								class="btn btnColorLight sansPro buttonSize  pl-3 borderRadius mt-2 mt-lg-0">Cancel</button>
 
 						</div>
 					</div>
 				</div>
 
 			</div>
-			<div class="tab-pane fade px-lg-5" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-				h
+			<div class="tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				<div class="row m-0 px-lg-5">
+					<div class="col-12 col-lg-8 p-0  pr-3 ">
+						<div class="">
+							<h3 class="m-0 pb-2 fontSize26 letterSpacing border-bottom">Payment method</h2>
+						</div>
+						<div class="d-flex flex-column  py-lg-3">
+							<div class=" pt-3 pb-3 pb-lg-0 border ">
+								<div class="form-group  m-0 d-flex">
+									<input type="radio" id="nextDayDelivery" name="radioBtn" value="nextDayDelivery"
+										class="my-auto mx-4">
+									<label for="nextDayDelivery" class="sansPro fontSize18 m-0">Credit Card<br>
+										<h6 class="pt-1 m-0 pr-2 pr-lg-0">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit, sed do eiusmod tempor </h6>
+									</label>
+								</div>
+								<div class="d-flex flex-column flex-lg-row justify-content-between mx-4 pt-lg-3 pt-3">
+									<div class="form-group m-0">
+										<div class="input-group creditCardNumber">
+											<input
+												class=" pl-4 form-control sansPro fontSize18 rounded-0 border-right-0 letterSpacing border"
+												type="text" placeholder="0000 &nbsp;0000 &nbsp;0000  &nbsp;0000"
+												autocomplete="email">
+											<div class="input-group-append">
+												<span
+													class="input-group-text bg-white border border-left-0 rounded-0 text-secondary">
+													<i class="far fa-credit-card fa-lg"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group cardShortInput m-0 pt-2 pt-lg-0">
+										<input class="form-control border rounded-0 sansPro fontSize18 text-center"
+											id="name" type="text" placeholder="MM/YY">
+									</div>
+
+									<div class="input-group cardShortInput m-0  pt-2 pt-lg-0">
+										<input
+											class=" pl-3 pr-0 border form-control sansPro fontSize18 rounded-0 border-right-0 letterSpacing"
+											type="text" placeholder="CVV">
+										<div class="input-group-append">
+											<span
+												class="input-group-text bg-white border border-left-0 rounded-0 text-secondary pl-1">
+												<i class="fas fa-info-circle"></i>
+											</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="mx-4 py-lg-3  pt-2 pt-lg-0">
+									<div class="form-group m-0">
+										<input type="text"
+											class="form-control border rounded-0 borderColor fontSize18 sansPro"
+											placeholder="Card Holder Name">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="border-top border-bottom">
+							<div class="d-flex flex-column  py-lg-3 py-3">
+								<div class=" py-3 border">
+									<div class="form-group m-0  row m-0">
+										<div class="col-8 p-0 d-flex">
+											<input type="radio" id="nextDayDelivery" name="radioBtn"
+												value="nextDayDelivery" class="my-auto mx-4">
+											<label for="nextDayDelivery" class="sansPro fontSize18 m-0">Paypal<br>
+												<p class="pt-1 m-0 sansPro fontSize16">Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+													labore </p>
+											</label>
+										</div>
+										<div class="col-4 p-0 d-flex justify-content-center">
+											<img class=" img-fluid paypalImage my-auto" src="images/paypalImage.PNG">
+										</div>
+
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 p-0 pl-lg-4 d-flex">
+						<div class="ml-0 ml-lg-2 d-flex flex-column flex-grow-1">
+							<div class="border-bottom">
+								<h3 class="m-0 pb-2 fontSize26 letterSpacing">Summary</h2>
+							</div>
+							<div class="flex-grow-1 d-flex  py-2 py-lg-0">
+								<div class=" d-flex flex-row py-lg-3">
+									<div class="d-flex">
+										<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
+									</div>
+									<div class="pl-4">
+										<h5 class="text-uppercase  sansPro">Product Name</h5>
+										<h4 class="m-0 sansPro">$300</h4>
+									</div>
+								</div>
+							</div>
+							<div class="flex-grow-1 d-flex  pb-lg-3 pb-2">
+								<div class=" d-flex flex-row ">
+									<div class="d-flex">
+										<img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
+									</div>
+									<div class="pl-4">
+										<h5 class="text-uppercase  sansPro">Product Name</h5>
+										<h4 class="m-0 sansPro">$300</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex-grow-1 d-flex border-top">
+								<div class="form-group m-0 w-100 d-flex">
+									<select id="inputRole"
+										class="form-control rounded-0 borderColor fontSize18 sansPro my-auto noBorder pl-0 text-uppercase">
+										<option selected>Have a voucher?</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="flex-grow-1 border-top border-bottom d-flex flex-column py-2">
+								<div class="d-flex justify-content-between my-auto py-2">
+									<h5 class="m-0 text-uppercase sansPro">Subtotal</h5>
+									<h5 class="m-0 sansPro">$600</h5>
+								</div>
+								<div class="d-flex justify-content-between my-auto py-2">
+									<h5 class="m-0 text-uppercase sansPro">Shipping</h5>
+									<h5 class="m-0 text-uppercase sansPro ">Free</h5>
+								</div>
+								<div class="d-flex justify-content-between my-auto py-2">
+									<h5 class="m-0 text-uppercase sansPro">Taxes</h5>
+									<h5 class="m-0 sansPro">$13</h5>
+								</div>
+							</div>
+
+
+							<div class="flex-grow-1 d-flex justify-content-between pt-3 pb-4">
+								<h3 class="m-0 text-uppercase my-auto fontSize26 sansPro">Total</h3>
+								<h3 class="m-0 my-auto fontSize26 sansPro font-weight-bold">$613</h3>
+							</div>
+						</div>
+
+					</div>
+					<div class="row m-0">
+						<div class="col-12 p-0 pt-lg-3">
+							<button type="button" class="btn btnColor sansPro buttonSize mr-2 borderRadius">Pay
+								Now</button>
+							<button type="button"
+								class="btn btnColorLight sansPro buttonSize  pl-3 borderRadius mt-2 mt-lg-0">Cancel</button>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

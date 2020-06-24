@@ -31,13 +31,14 @@
 </head>
 
 <body class="bg-light  d-flex justify-content-center">
-    <div class="container border p-0 bg-white">
+    <div class="container border-top border-bottom border-left border-right p-0 bg-white">
         <div class="py-3">
             <header class="row m-0 pl-lg-5 pl-2 pt-1 f-flex justify-content-lg-between">
-                <div class="col-5 p-0  d-flex flex-row">
+                <div class="col-5 p-0  flex-row d-none d-lg-flex">
                     <i class="fas fa-image fa-1x my-auto px-4"></i>
                 </div>
-                <div class="col-12 col-lg-7 p-0 mt-2 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between ">
+                <div
+                    class="col-12 col-lg-7 p-0 mt-2 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between justify-content-center">
                     <div class=" d-flex flex-row">
                         <div class="navLinks d-flex">
                             <a href="index.html" class="sansPro mx-auto">Home</a>
@@ -56,7 +57,8 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <button type="button" class="btn text-white btnYourCart my-auto borderRadius p-0 sansPro">
+                        <button type="button" class="btn text-white btnYourCart my-auto borderRadius p-0 sansPro"
+                            onclick="location.href='cart.html'">
                             <span class="btn-label"><i
                                     class="fas fa-shopping-cart  fa-xs borderRadius pr-2"></i></span>Your Cart
                         </button>
@@ -65,7 +67,7 @@
             </header>
         </div>
         <div class="row m-0 backgroundColor border-top border-bottom">
-            <div class="col-12 col-lg-6 p-0 d-flex flex-column">
+            <div class="col-12 col-lg-6 p-lg-0 d-flex flex-column">
                 <div class=" row m-0 pl-lg-5 pr-lg-4 py-5">
                     <img class=" img-fluid pt-5" src="images/product.PNG">
                 </div>
@@ -82,7 +84,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 p-0 pb-3 d-flex flex-column border-left">
-                <div class="px-lg-5 py-4">
+                <div class="px-lg-5 px-3 py-4">
                     <h2>Product title</h2>
                     <div class="d-flex flex-row">
                         <div>
@@ -98,7 +100,8 @@
                     </div>
                 </div>
                 <div class="px-lg-5">
-                    <div class="border-top border-bottom d-flex justify-content-between py-4">
+                    <div
+                        class="border-top border-bottom d-flex flex-column flex-lg-row justify-content-lg-between py-4 px-3 px-lg-0">
                         <p class="m-0 fontSize36 sansPro">$ 1232</p>
                         <div class="form-group selectModelInput m-0 d-flex sansPro ">
                             <select id="inputRole" class="form-control rounded-0 borderColor my-auto placeholderSize">
@@ -110,7 +113,7 @@
                 </div>
                 <div class="px-lg-5">
                     <div>
-                        <p class="m-0 py-4 pr-2 sansPro">
+                        <p class="m-0 py-4 pr-lg-2 pr-4 pl-4 pl-lg-0 sansPro">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
@@ -118,7 +121,7 @@
                     </div>
                     <div class="border-top w-25"></div>
                 </div>
-                <div class="px-lg-5 py-4">
+                <div class="px-lg-5 px-4 py-4">
                     <button type="button" class="btn btn-lg btnColor sansPro px-4 borderRadius">Add To Cart</button>
                 </div>
             </div>
@@ -129,7 +132,7 @@
             </div>
             <div class="col-12 p-0">
                 <div class="row m-0">
-                    <div class="col-12 col-lg-4  p-0 pl-lg-5 d-flex flex-row">
+                    <div class="col-12 col-lg-4  p-0 pl-lg-5 pl-3 d-flex flex-row ">
                         <div class="d-flex">
                             <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
                         </div>
@@ -143,8 +146,8 @@
                             <h4 class="m-0 pt-2 p21 sansPro">$300</h4>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 p-0 d-flex px-lg-4">
-                        <div class=" d-flex flex-row pl-2">
+                    <div class="col-12 col-lg-8 p-0 d-flex flex-column flex-lg-row px-lg-4 px-3">
+                        <div class=" d-flex flex-row pl-0 pl-lg-2 ">
                             <div class="d-flex">
                                 <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
                             </div>
@@ -158,7 +161,7 @@
                                 <h4 class="m-0 pt-2 p21 sansPro">$300</h4>
                             </div>
                         </div>
-                        <div class=" d-flex flex-row pl-5">
+                        <div class=" d-flex flex-row pl-lg-5">
                             <div class="d-flex">
                                 <img class="imageProduct img-fluid border my-auto" src="images/image6.PNG">
                             </div>
@@ -176,17 +179,17 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 px-lg-5 pt-4">
-            <h2 class="m-0">Reviews</h2>
+        <div class="row m-0 px-lg-5 px-3 pt-4 d-flex">
+            <h2 class="m-0 mx-auto mx-lg-0">Reviews</h2>
         </div>
-        <div class="row m-0 px-lg-5 pt-lg-5">
+        <div class="row m-0 px-lg-5 px-3 pt-lg-5">
             <div class="col-4 p-0  d-flex">
                 <div class=" my-auto">
-                    <div class=" py-4 d-flex flex-row">
-                        <div class="pr-3">
+                    <div class=" py-4 d-flex flex-lg-row flex-column">
+                        <div class="pr-3 p-0">
                             <i class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
                         </div>
-                        <div class="pl-3">
+                        <div class="pl-lg-3 ">
                             <h4 class="mb-1 text-uppercase font-weight-bold">John Doe</h4>
                             <h5>august 14, 2018</h5>
                             <i class="fas fa-star fa-xs text-secondary"></i>
@@ -209,14 +212,14 @@
                 </p>
             </div>
         </div>
-        <div class="row m-0 px-lg-5 pb-lg-5 border-bottom">
+        <div class="row m-0 px-lg-5 px-3 pb-lg-5 border-bottom">
             <div class="col-4 p-0 d-flex">
                 <div class="my-auto">
-                    <div class="py-4 d-flex flex-row">
+                    <div class="py-4 d-flex flex-lg-row flex-column">
                         <div class="pr-3">
                             <i class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
                         </div>
-                        <div class="pl-3">
+                        <div class="pl-lg-3 pl-0">
                             <h4 class="mb-1 text-uppercase font-weight-bold">John Doe</h4>
                             <h5>august 14, 2018</h5>
                             <i class="fas fa-star fa-xs text-secondary"></i>

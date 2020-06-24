@@ -15,6 +15,21 @@
 		height: 41px;
 		width: 108px;
 	}
+	.shortDiv{
+		height: 100vh;
+	}
+	.buttonSize{
+		width:182px;
+		height:41px;
+	}
+	
+	.shortInput{
+		width: 283px!important;
+	}
+	
+	.noBorder{
+		border:none;
+	}
 }
 
 .buttonSize{
@@ -22,13 +37,36 @@
 	height:41px;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-		border-color: white white black white!important;
-		/* font-weight: 900!important; */
-		font-style: italic;
-		color:black;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {	
+		background-color: rgba(146, 146, 146, 0%);
 	}
+.nav-tabs .nav-link.active {
+		border-color: rgba(146, 146, 146, 0%);
+	}
+
+.active .tabName{
+	border-bottom: solid 2px #404040;
+	font-weight: bold;
+}
+
 input[type=number]::-webkit-inner-spin-button {
 	opacity: 1;
   }
+.cardShortInput{
+	width: 94px!important;
+}
 
+.paypalImage{
+	width: 122px;
+	height: 39px;
+}
+
+
+@media (max-width: 991px) 
+{
+	.inputNumber{
+		height: 31px;
+		width: 88px;
+	}
+
+}
