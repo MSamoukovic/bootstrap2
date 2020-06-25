@@ -1,40 +1,5 @@
-@media screen and (min-width: 991px) {
-	.py-lg-3{
-		padding-top:30px!important;
-		padding-bottom:30px!important;
-	}
-	
-	.pb-lg-3{
-		padding-bottom:30px!important;
-	}
-	
-	.pt-lg-3{
-		padding-top:30px!important;
-	}
-	.inputNumber{
-		height: 41px;
-		width: 108px;
-	}
-	.shortDiv{
-		height: 100vh;
-	}
-	.buttonSize{
-		width:182px;
-		height:41px;
-	}
-	
-	.shortInput{
-		width: 283px!important;
-	}
-	
-	.noBorder{
-		border:none;
-	}
-}
-
 .buttonSize{
 	width:182px;
-	height:41px;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {	
@@ -49,24 +14,71 @@
 	font-weight: bold;
 }
 
-input[type=number]::-webkit-inner-spin-button {
-	opacity: 1;
-  }
-.cardShortInput{
-	width: 94px!important;
-}
-
 .paypalImage{
 	width: 122px;
-	height: 39px;
 }
 
+.fontSize14{
+	font-size: 14px;
+}
+
+input[type=number] {
+	/*for absolutely positioning spinners*/
+	position: relative; 
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	border-left: 5px ;
+	opacity: 1;
+  }
+
+  @media screen and (min-width: 991px) {
+	.py-lg-3{
+		padding-top:30px!important;
+		padding-bottom:30px!important;
+	}
+	
+	.pb-lg-3{
+		padding-bottom:30px!important;
+	}
+	
+	.pt-lg-3{
+		padding-top:30px!important;
+	}
+	.inputNumber{
+		width: 108px;
+	}
+	.shortDiv{
+		min-height: 100vh;
+	}
+	.buttonSize{
+		width:182px;
+		height:41px;
+	}
+	
+	.shortInput{
+		width: 283px!important;
+	}
+	
+	.noBorder{
+		border:none;
+	}
+	.creditCardNumber{
+		width: 296px;
+	}
+	
+	.cardShortInput{
+		width: 94px!important;
+	}
+}
 
 @media (max-width: 991px) 
 {
 	.inputNumber{
-		height: 31px;
-		width: 88px;
+		width: 90px;
 	}
-
 }

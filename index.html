@@ -25,13 +25,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-
     <title>Home</title>
 </head>
 
 <body class="bg-light  d-flex justify-content-center">
     <div class="container border-top border-bottom border-left border-right p-0 bg-white">
-        <div class="">
+        <div>
             <header class="row m-0 pl-lg-5 pt-1 pl-0 pr-0  d-flex justify-content-lg-between ">
                 <div class="col-12 col-lg-5 px-3 px-lg-0  d-flex flex-lg-row">
                     <i class="fas fa-image fa-1x my-auto px-4 d-flex"></i>
@@ -47,7 +46,7 @@
                     </div>
                 </div>
                 <div
-                    class="col-12 col-lg-7  p-0 mt-3 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between justify-content-center ">
+                    class="col-12 col-lg-7  p-0 mt-2 mt-lg-0 pr-lg-5 pl-lg-4 d-flex justify-content-lg-between justify-content-center ">
                     <div class=" d-flex flex-row">
                         <div class="navLinks d-flex">
                             <a href="#" class="sansPro m-auto">Home</a>
@@ -55,7 +54,7 @@
 
                         </div>
                         <div class="navLinks d-flex">
-                            <a href="#" class="sansPro m-auto">About</a>
+                            <a href="product.html" class="sansPro m-auto">About</a>
                             <div class="line my-auto"></div>
                         </div>
                         <div class="navLinks d-flex">
@@ -90,7 +89,7 @@
                         <img src="images/image1.png" class="img-fluid border border-secondary descriptionImg  ">
                     </div>
                 </div>
-                <div class="row justify-content-center  p-1 py-lg-5 py-4">
+                <div class="row m-0 justify-content-center  p-1 py-lg-5 py-4">
                     <button type="button"
                         class="btn btn-lg btnColor text-white sansPro px-5 borderRadius shopNowButton">Shop
                         Now</button>
@@ -99,10 +98,10 @@
         </div>
         <div>
             <h2 class="text-center m-0 pt-lg-5 pt-lg-3">Featured Products</h2>
-            <div class="mt-4 px-4 px-lg-0">
+            <div class="mt-4 px-1 px-lg-0">
                 <div id="carouselExampleControls" class="carousel slide px-lg-5" data-ride="carousel"
                     data-interval="false">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner px-4 px-lg-0">
                         <div class="carousel-item active">
                             <div class="row m-0">
                                 <div class="col-6 p-0 d-flex ">
@@ -188,22 +187,14 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev pl-lg-3 pl-0" href="#carouselExampleControls" role="button"
+                    <a class="carousel-control-prev pl-lg-4 pl-0" href="#carouselExampleControls" role="button"
                         data-slide="prev">
-                        <svg class="bi bi-caret-left-fill" width="1.7em" height="1.7em" viewBox="0 0 16 16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                        </svg>
+                        <span class="fa fa-caret-left fa-2x text-dark" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next pr-lg-3 pr-0" href="#carouselExampleControls" role="button"
+                    <a class="carousel-control-next pr-lg-4 pr-0" href="#carouselExampleControls" role="button"
                         data-slide="next">
-                        <svg class="bi bi-caret-right-fill" width="1.7em" height="1.7em" viewBox="0 0 16 16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                        </svg>
+                        <span class="fa fa-caret-right fa-2x text-dark" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -357,10 +348,10 @@
                 <div class="col-6 col-lg-2 p-0  py-4 d-flex d-lg-inline">
                     <div class="mx-auto mx-lg-0">
                         <p class="text-uppercase mb-3">Main Menu</p>
-                        <p class="mb-1">Home</h5>
-                        <p class="mb-1">About</p>
-                        <p class="mb-1">Shop</p>
-                        <p class="m-0">Help</p>
+                        <p class="mb-1"><a href="index.html">Home</a></p>
+                        <p class="mb-1"><a href="product.html">About</a></p>
+                        <p class="mb-1"><a href="shop.html">Shop</a></p>
+                        <p class="mb-1"><a href="#">Help</a></p>
                     </div>
                 </div>
                 <div class="col-6 col-lg-2 p-0 py-4 d-flex d-lg-inline">
@@ -389,13 +380,13 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 pt-1 px-lg-5">
+        <footer class="row m-0 pt-1 px-lg-5 px-4">
             <div class="col-auto p-0 sansPro fontSize17">
-                <span class="glyphicon glyphicon-envelope p-2">
+                <span class="glyphicon glyphicon-envelope pr-2">
                     <i class="fas fa-copyright fa-1x text-secondary"></i>
                 </span> Your Company Name
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 

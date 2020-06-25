@@ -10,7 +10,6 @@
     .productBigImage{
         width: 271px;
     }
-   
     .inputSearch{
         width: 299px!important;
     }
@@ -21,11 +20,9 @@
         width: 275px;
         font-size: 18px!important;
     }
-
     .subscribeButton{
         width: 145px;
     }
-
     .swiperImage{
         width: 436px!important;
         height: 259px!important;
@@ -44,11 +41,8 @@
 
 .carousel-control-next, .carousel-control-prev {
     width: auto!important;
-    opacity: 1;
-
+    opacity: 0.7;
 }
-
-
 
 @media (max-width: 991px) 
 {
