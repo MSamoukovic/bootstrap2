@@ -1,37 +1,10 @@
 @media screen and (min-width: 991px) {
     .descriptionImg{
         width:162px;
-        height: 132px;
     }
-    .productImage{
-        width: 271px;
-        height: 110px;
-    }
-    .productBigImage{
-        width: 271px;
-    }
+
     .inputSearch{
         width: 299px!important;
-    }
-    .card{
-        width: 271px;
-    }
-    .inputEmail{
-        width: 275px;
-        font-size: 18px!important;
-    }
-    .subscribeButton{
-        width: 145px;
-    }
-    .swiperImage{
-        width: 436px!important;
-        height: 259px!important;
-    }
-    .swiperCard{
-        width: 436px!important;
-    }
-    .shopNowButton{
-        width: 182px!important;
     }
     .placeholderFontSize
     {

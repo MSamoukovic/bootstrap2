@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
 
     <title>Product</title>
 </head>
@@ -104,10 +105,17 @@
                         class="border-top border-bottom d-flex flex-column flex-lg-row justify-content-lg-between py-4 px-3 px-lg-0">
                         <p class="m-0 fontSize36 sansPro">$ 1232</p>
                         <div class="form-group selectModelInput m-0 d-flex sansPro ">
-                            <select id="inputRole" class="form-control rounded-0 borderColor my-auto placeholderSize">
+                            <!-- <select id="inputRole" class="form-control rounded-0 borderColor my-auto placeholderSize">
                                 <option selected>Select Model</option>
                                 <option>...</option>
-                            </select>
+                            </select> -->
+                            <div class="selectOption my-auto"> 
+                                <select name="slct" class="slct placeholderSize"> 
+                                    <option selected>Select Model</option>
+                                    <option >...</option> 
+                                    <option >...</option> 
+                                </select> 
+                            </div> 
                         </div>
                     </div>
                 </div>
