@@ -1,11 +1,4 @@
 @media screen and (min-width: 991px) {
-    .descriptionImg{
-        width:162px;
-    }
-
-    .inputSearch{
-        width: 299px!important;
-    }
     .placeholderFontSize
     {
         font-size: 14px!important;
