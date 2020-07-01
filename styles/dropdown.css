@@ -29,7 +29,8 @@
 	padding-left: 4px;
 	padding-right: 4px;
     color:#83888d;
-    font-size: 14px;
+	font-size: 14px;
+	border-width: 2px;
 } 
 
 .selectOption:hover::after { 

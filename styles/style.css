@@ -81,14 +81,21 @@ a{
     letter-spacing: 2px;
 }
 
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+
 .border{
-    border-color: rgba(96, 96, 96, 55%)!important;
-	/* border-width: 1.5px!important; */
+    border-color: rgba(96, 96, 96, 45%)!important;
 }
 
 .border-top, .border-bottom, .border-left, .border-right{
 	border-color: rgba(96, 96, 96, 20%)!important;
 	border-width: 1.4px!important;
+}
+
+.border-width{
+    border-width: 2px!important;
 }
 
 .vertical-line{
@@ -98,6 +105,26 @@ a{
     width:2px;
 }
 
+.border-radius-left-none{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.border-radius-right-none{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.border-radius-left-small{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.border-radius-right-small{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
 @media screen and (min-width: 991px) {
     body{
         width: 1027px;
@@ -105,7 +132,6 @@ a{
         margin-left: auto;
         margin-top: 0;
         margin-right: auto;
-
     }
 
     .pb-lg-5{
