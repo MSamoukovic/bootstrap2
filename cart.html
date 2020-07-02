@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="styles/cart.css">
 	<link rel="stylesheet" href="styles/dropdown.css">
 
+
 	<title>Cart</title>
 </head>
 
@@ -188,7 +189,7 @@
 					<div class="col-12 col-lg-5 p-0 pt-4 pt-lg-3 text-center text-lg-left">
 						<div class="row m-0 ">
 							<div class="col-6 p-0  pr-2">
-								<button type="button"
+								<button type="button" id="shoppingCartNextBtn"
 									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100">Next
 								</button>
 							</div>
@@ -215,14 +216,14 @@
 										<div class="form-group m-0 ">
 											<input type="text"
 												class="form-control border border-width rounded-0 font-size-18 sans-pro"
-												placeholder="First Name">
+												placeholder="First Name" id="firstName">
 										</div>
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3 pt-2 pt-lg-0">
 										<div class="form-group m-0">
 											<input type="text"
 												class="form-control border border-width rounded-0 font-size-18 sans-pro"
-												placeholder="Last Name">
+												placeholder="Last Name" id="lastName">
 										</div>
 									</div>
 								</div>
@@ -230,12 +231,12 @@
 							<div class="col-12 p-0 form-group m-0 py-2 py-lg-0 ">
 								<input type="text"
 									class="form-control border border-width rounded-0 font-size-18 sans-pro"
-									placeholder="Address">
+									placeholder="Address" id="address">
 							</div>
 							<div class="col-12 p-0 form-group m-0  py-lg-3">
 								<input type="text"
 									class="form-control border border-width rounded-0 font-size-18 sans-pro"
-									placeholder="Address 2">
+									placeholder="Address 2" id="address2">
 							</div>
 							<div class="col-12 p-0">
 								<div class="row m-0 ">
@@ -248,14 +249,14 @@
 										</select>
 										 -->
 										<div class=" p-0 selectOption ">
-											<select name="slct" class="slct border-width">
+											<select name="slct" class="slct border-width" id="country">
 												<option selected>Country</option>
-												<option>...</option>
-												<option>...</option>
+												<option>Country 1</option>
+												<option>Country 2</option>
 											</select>
 										</div>
 									</div>
-									<div class=" col-12 col-lg-6 p-0 pl-lg-3">
+									<div class=" col-12 col-lg-6 p-0 pl-lg-3" id="city">
 										<div class="form-group m-0">
 											<input type="text"
 												class="form-control border border-width  rounded-0 sans-pro font-size-18"
@@ -269,12 +270,12 @@
 									<div class="col-12 col-lg-6 form-group p-0 pr-lg-3  m-0 py-2 py-lg-0">
 										<input type="text"
 											class="form-control border border-width rounded-0 sans-pro font-size-18"
-											placeholder="Zip/Postal Code">
+											placeholder="Zip/Postal Code" id="zipCode">
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3">
 										<input type="text"
 											class="form-control border border-width rounded-0 sans-pro font-size-18"
-											placeholder="Phone Number">
+											placeholder="Phone Number" id="phoneNumber">
 									</div>
 								</div>
 							</div>
@@ -283,8 +284,8 @@
 									<div class="col-12 col-lg-6 p-0 pr-lg-3">
 										<div
 											class="form-group m-0 border border-width d-flex bg-color-light font-size-18 ">
-											<input type="radio" id="freeShipping" name="radioBtn" value="freeShipping"
-												class="my-auto mx-4" checked>
+											<input type="radio" id="freeShipping" name="ShippingRadioBtn"
+												value="freeShipping" class="my-auto mx-4" checked>
 											<label for="freeShipping" class="sans-pro font-size-18 m-0 py-3">Free
 												Shipping<br>
 												<h6 class="pt-1 ">Between 2-5 working days</h6>
@@ -293,7 +294,7 @@
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3 pt-2 pt-lg-0">
 										<div class="form-group m-0 border border-width d-flex">
-											<input type="radio" id="nextDayDelivery" name="radioBtn"
+											<input type="radio" id="nextDayDelivery" name="ShippingRadioBtn"
 												value="nextDayDelivery" class="my-auto mx-4">
 											<label for="nextDayDelivery" class="sans-pro font-size-18 m-0 py-3">Next Day
 												Delivery - $20<br>
@@ -379,13 +380,13 @@
 					<div class="col-12 col-lg-5 p-0 pt-4 text-center text-lg-left">
 						<div class="row m-0 ">
 							<div class="col-6 p-0  pr-2 ">
-								<button type="button"
+								<button type="button" id="shippingDetailsNextBtn"
 									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro  mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100">Next
 								</button>
 							</div>
 							<div class="col-6 p-0  pl-1 pr-0 pr-lg-2">
 								<button type="button"
-									class="btn bg-color-light font-size-18 letter-spacing sans-pro   pl-3 border-radius mt-2 mt-lg-0 w-100">Cancel</button>
+									class="btn bg-color-light font-size-18 letter-spacing sans-pro  pl-3 border-radius mt-2 mt-lg-0 w-100">Cancel</button>
 							</div>
 						</div>
 					</div>
@@ -418,7 +419,7 @@
 											<input
 												class=" pl-2 pl-lg-4 pr-0 form-control sans-pro font-size-18 rounded-0 border-width border-right-0 letter-spacing border"
 												type="text" placeholder="0000 &nbsp;0000 &nbsp;0000  &nbsp;0000"
-												autocomplete="email">
+												autocomplete="email" id="creditCardNumber">
 											<div class="input-group-append">
 												<span
 													class="input-group-text bg-white border border-width border-left-0 rounded-0 text-secondary">
@@ -432,12 +433,12 @@
 											<div class="col-6 m-0 p-0 form-group  pl-0  pr-3 ">
 												<input
 													class="form-control border border-width rounded-0 sans-pro font-size-18 text-lg-center text-left"
-													id="name" type="text" placeholder="MM/YY">
+													type="text" placeholder="MM/YY" id="date">
 											</div>
 											<div class="col-6 m-0 pr-0 d-flex flex-row form-group pl-2">
 												<input
 													class=" pr-0 pl-3 border border-width form-control sans-pro font-size-18 rounded-0 border-right-0 letter-spacing"
-													type="text" placeholder="CVV">
+													type="text" placeholder="CVV" id="cvv">
 												<span
 													class="input-group-text bg-white border border-width border-left-0 rounded-0 text-secondary pl-1 py-0">
 													<i class="fas fa-info-circle "></i>
@@ -451,7 +452,7 @@
 									<div class="form-group m-0">
 										<input type="text"
 											class="form-control border border-width rounded-0 font-size-18 sans-pro"
-											placeholder="Card Holder Name">
+											placeholder="Card Holder Name" id="cardHolderName">
 									</div>
 								</div>
 							</div>
@@ -553,10 +554,11 @@
 						<div class="row m-0 ">
 							<div class="col-6 p-0  pr-2">
 								<button type="button"
-									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100">Pay
+									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100"
+									id="payNow">Pay
 									Now</button>
 							</div>
-							<div class="col-6 p-0  pl-1 pr-0 pr-lg-2">
+							<div class="col-6 p-0  pl-1 pr-0 pr-lg-2" id="demo">
 								<button type="button"
 									class="btn bg-color-light font-size-18 letter-spacing sans-pro pl-3 border-radius mt-2 mt-lg-0 w-100">Cancel</button>
 							</div>
@@ -595,3 +597,6 @@
 </body>
 
 </html>
+<script src="js/shippingDetails.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/shoppingCart.js"></script>
