@@ -78,12 +78,12 @@
 								aria-selected="true">
 								<h4 class="tabName letter-spacing m-0 w-100 mt-auto pb-4">1. Shopping Cart</h4>
 							</a>
-							<a class="nav-item nav-link col-12 col-lg-4 pb-0 d-flex" id="nav-profile-tab"
+							<a class="nav-item nav-link col-12 col-lg-4 pb-0 d-flex disabled" id="nav-profile-tab"
 								data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
 								aria-selected="false">
 								<h4 class="tabName letter-spacing m-0 w-100 mt-auto pb-4">2. Shipping Details</h4>
 							</a>
-							<a class="nav-item nav-link col-12 col-lg-4 pl-lg-4 pr-lg-0 pr-3 pb-0 d-flex"
+							<a class="nav-item nav-link col-12 col-lg-4 pl-lg-4 pr-lg-0 pr-3 pb-0 d-flex disabled"
 								id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
 								aria-controls="nav-contact" aria-selected="false">
 								<h4 class="tabName letter-spacing m-0 w-100 mt-auto pb-4">3. Payment Options</h4>
@@ -209,6 +209,7 @@
 								<h3 class="m-0 pb-2 font-size-26 letter-spacing">Shipping Details</h2>
 							</div>
 						</div>
+						<form onsubmit="shippingDetails()">
 						<div class="row m-0 py-2 py-lg-0">
 							<div class="col-12 p-0  py-lg-3 ">
 								<div class="row m-0">
@@ -216,14 +217,16 @@
 										<div class="form-group m-0 ">
 											<input type="text"
 												class="form-control border border-width rounded-0 font-size-18 sans-pro"
-												placeholder="First Name" id="firstName">
+												placeholder="First Name" id="firstName" onclick="checkFirstName()" onkeyup="checkFirstName()" onchange="checkFirstName()"required>
+												<p id="firstNameMessage" style="position: absolute;color: red;"></p>
 										</div>
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3 pt-2 pt-lg-0">
 										<div class="form-group m-0">
 											<input type="text"
 												class="form-control border border-width rounded-0 font-size-18 sans-pro"
-												placeholder="Last Name" id="lastName">
+												placeholder="Last Name" id="lastName" onclick="checkLastName()" onkeyup="checkLastName()" onchange="checkLastName()"required>
+												<p id="lastNameMessage" style="position: absolute;color: red;"></p>
 										</div>
 									</div>
 								</div>
@@ -231,12 +234,16 @@
 							<div class="col-12 p-0 form-group m-0 py-2 py-lg-0 ">
 								<input type="text"
 									class="form-control border border-width rounded-0 font-size-18 sans-pro"
-									placeholder="Address" id="address">
+									placeholder="Address" id="address" onclick="checkAddress()" onkeyup="checkAddress()" onchange="checkAddress()" required>
+									<p id="addressMessage" style="position: absolute;color: red;"></p>
+
 							</div>
 							<div class="col-12 p-0 form-group m-0  py-lg-3">
 								<input type="text"
 									class="form-control border border-width rounded-0 font-size-18 sans-pro"
-									placeholder="Address 2" id="address2">
+									placeholder="Address 2" id="address2" onclick="checkAddress2()" onkeyup="checkAddress2()" onchange="checkAddress2()" required>
+									<p id="address2Message" style="position: absolute;color: red;"></p>
+
 							</div>
 							<div class="col-12 p-0">
 								<div class="row m-0 ">
@@ -249,18 +256,21 @@
 										</select>
 										 -->
 										<div class=" p-0 selectOption ">
-											<select name="slct" class="slct border-width" id="country">
-												<option selected>Country</option>
+											<select name="slct" class="slct border-width" id="country" onclick="checkCountry()" onchange="checkCountry()" required>
+												<option value="" disabled selected>Country</option>
 												<option>Country 1</option>
 												<option>Country 2</option>
 											</select>
 										</div>
+										<p id="countryMessage" style="position: absolute;color: red;"></p>
+
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3" id="city">
 										<div class="form-group m-0">
 											<input type="text"
 												class="form-control border border-width  rounded-0 sans-pro font-size-18"
-												placeholder="City">
+												placeholder="City" id="cityInput" onclick="checkCity()" onkeyup="checkCity()"  onchange="checkCity()"  required>
+												<p id="cityMessage" style="position: absolute;color: red;"></p>
 										</div>
 									</div>
 								</div>
@@ -270,16 +280,18 @@
 									<div class="col-12 col-lg-6 form-group p-0 pr-lg-3  m-0 py-2 py-lg-0">
 										<input type="text"
 											class="form-control border border-width rounded-0 sans-pro font-size-18"
-											placeholder="Zip/Postal Code" id="zipCode">
+											placeholder="Zip/Postal Code" id="zipCode" onclick="checkZipCode()" onkeyup="checkZipCode()" onchange="checkZipCode()"  required>
+											<p id="zipCodeMessage" style="position: absolute;color: red;"></p>
 									</div>
 									<div class=" col-12 col-lg-6 p-0 pl-lg-3">
 										<input type="text"
 											class="form-control border border-width rounded-0 sans-pro font-size-18"
-											placeholder="Phone Number" id="phoneNumber">
+											placeholder="Phone Number" id="phoneNumber" onclick="checkPhoneNumber()" onkeyup="checkPhoneNumber()" onchange="checkPhoneNumber()"  required>
+											<p id="phoneNumberMessage" style="position: absolute;color: red;"></p>
 									</div>
 								</div>
 							</div>
-							<form class="col-12 p-0 py-lg-3 border-top border-bottom">
+							<div class="col-12 p-0 py-lg-3 border-top border-bottom">
 								<div class="row m-0 py-2 py-lg-0">
 									<div class="col-12 col-lg-6 p-0 pr-lg-3">
 										<div
@@ -303,8 +315,9 @@
 										</div>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
+					</form>
 					</div>
 					<div class="col-12 col-lg-4 p-0 pl-lg-4 d-flex">
 						<div class="row m-0 ml-0 ml-lg-2  ">
@@ -380,7 +393,7 @@
 					<div class="col-12 col-lg-5 p-0 pt-4 text-center text-lg-left">
 						<div class="row m-0 ">
 							<div class="col-6 p-0  pr-2 ">
-								<button type="button" id="shippingDetailsNextBtn"
+								<button type="button" id="shippingDetailsNextBtn" onclick="shippingDetails()"
 									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro  mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100">Next
 								</button>
 							</div>
@@ -419,7 +432,7 @@
 											<input
 												class=" pl-2 pl-lg-4 pr-0 form-control sans-pro font-size-18 rounded-0 border-width border-right-0 letter-spacing border"
 												type="text" placeholder="0000 &nbsp;0000 &nbsp;0000  &nbsp;0000"
-												autocomplete="email" id="creditCardNumber">
+												autocomplete="email" id="creditCardNumber" onclick="checkCreditCardNumber()" onkeyup="checkCreditCardNumber()" onchange="checkCreditCardNumber()"  required>
 											<div class="input-group-append">
 												<span
 													class="input-group-text bg-white border border-width border-left-0 rounded-0 text-secondary">
@@ -427,24 +440,35 @@
 												</span>
 											</div>
 										</div>
+										<p id="creditCardMessage" style="position: absolute;color: red;"></p>
+
 									</div>
 									<div class="col-12 col-lg-5 p-0 pt-2 pt-lg-0">
 										<div class="row m-0">
 											<div class="col-6 m-0 p-0 form-group  pl-0  pr-3 ">
 												<input
 													class="form-control border border-width rounded-0 sans-pro font-size-18 text-lg-center text-left"
-													type="text" placeholder="MM/YY" id="date">
+													type="text" placeholder="MM/YY" id="date" onclick="checkDate()" onkeyup="checkDate()" onchange="checkDate()"  required>
+													<p id="dateMessage" style="position: absolute;color: red;"></p>
+
 											</div>
-											<div class="col-6 m-0 pr-0 d-flex flex-row form-group pl-2">
-												<input
+											<div class="col-6 m-0 pr-0 d-flex flex-column form-group pl-2">
+												<div class="d-flex flex-row">
+													<input
 													class=" pr-0 pl-3 border border-width form-control sans-pro font-size-18 rounded-0 border-right-0 letter-spacing"
-													type="text" placeholder="CVV" id="cvv">
+													type="text" placeholder="CVV" id="cvv" onclick="checkCVV()" onkeyup="checkCVV()" onchange="checkCVV()"  required>
 												<span
 													class="input-group-text bg-white border border-width border-left-0 rounded-0 text-secondary pl-1 py-0">
 													<i class="fas fa-info-circle "></i>
 												</span>
+												</div>
+												
+												<div >
+													<p id="cvvMessage" style="position: absolute;color: red;"></p>
+												</div>
 
 											</div>
+
 										</div>
 									</div>
 								</div>
@@ -452,7 +476,9 @@
 									<div class="form-group m-0">
 										<input type="text"
 											class="form-control border border-width rounded-0 font-size-18 sans-pro"
-											placeholder="Card Holder Name" id="cardHolderName">
+											placeholder="Card Holder Name" id="cardHolderName" onclick="checkCardHolderName()" onkeypress="checkCardHolderName()" onchange="checkCardHolderName()"  required>
+											<p id="cardHolderNameMessage" style="position: absolute;color: red;"></p>
+
 									</div>
 								</div>
 							</div>
@@ -555,7 +581,7 @@
 							<div class="col-6 p-0  pr-2">
 								<button type="button"
 									class="btn bg-color-secondary font-size-18 letter-spacing sans-pro mr-0 mr-lg-2 mt-2 mt-lg-0 border-radius w-100"
-									id="payNow">Pay
+									id="payNow" onclick="PayNow()">Pay
 									Now</button>
 							</div>
 							<div class="col-6 p-0  pl-1 pr-0 pr-lg-2" id="demo">
@@ -600,3 +626,6 @@
 <script src="js/shippingDetails.js"></script>
 <script src="js/payment.js"></script>
 <script src="js/shoppingCart.js"></script>
+<script src="js/profileValidation.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/paymentValidation.js"></script>
