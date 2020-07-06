@@ -5,3 +5,13 @@ function goOnNextTab(nav, button) {
     tabId = document.getElementById(nav);
     document.getElementById(button).addEventListener("click", tabId.click());
 }
+
+function goOnTab(nav, button) {
+    var tabId = document.getElementById(nav);
+    document.getElementById(button).addEventListener("click", tabId.click());
+}
+
+function disableTab(nav, button) {
+    var profileTab = document.getElementById(nav);
+    profileTab.classList.add("disabled")
+}

@@ -1,3 +1,11 @@
+document.getElementById("shippingDetailsNextBtn").addEventListener("click", shippingDetails);
+document.getElementById("shippingDetailsCancelBtn").addEventListener("click", shippingDetailsCancel);
+
+
+function shippingDetailsCancel() {
+	goOnNextTab("nav-home-tab", "shippingDetailsCancelBtn")
+}
+
 function shippingDetails() {
 
 	if (checkAllProfileInputFields()) {

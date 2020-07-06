@@ -1,9 +1,10 @@
-
 function checkCreditCardNumber() {
     var creditCardNumber = document.getElementById("creditCardNumber");
-    console.log("len " + creditCardNumber.value.length);
-
-
+    // var inputLength = creditCardNumber.value.length;
+    // if (inputLength == 4 || inputLength == 9 || inputLength == 14)
+    // {
+    //     creditCardNumber.value += " ";
+    // }
     if (!creditCardNumber.checkValidity()) {
         document.getElementById("creditCardMessage").innerHTML = "Please enter the number of credit card";
         return false;
@@ -41,12 +42,11 @@ function checkCVV() {
         return false;
     }
     else if (isNaN(cvv.value)) {
-        document.getElementById("cvvMessage").innerHTML = "input numbers";
+        document.getElementById("cvvMessage").innerHTML = "Input numbers";
     }
-    // else if(creditCardNumber.value.length<3 || creditCardNumber.value.length>3)
-    // {
-    //     document.getElementById("creditCardMessage").innerHTML = "Only 3 numbers";
-    // }
+    else if (cvv.value.length < 3 || cvv.value.length > 3) {
+        document.getElementById("cvvMessage").innerHTML = "Please enter exactly 3 numbers";
+    }
     else {
         document.getElementById("cvvMessage").innerHTML = "";
         return true;
@@ -66,7 +66,6 @@ function checkCardHolderName() {
     }
 }
 
-
 function areAllPaymentOptionsValid() {
     var allInputs = checkCreditCardNumber() == true && checkDate() == true && checkCVV() == true && checkCardHolderName() == true;
     return allInputs;
@@ -75,4 +74,12 @@ function areAllPaymentOptionsValid() {
 function checkAllPaymentFields() {
     var fields = checkCreditCardNumber() == true || checkDate() == true || checkCVV() == true || checkCardHolderName() == true;
     return fields;
+}
+
+function arePaymentFieldsDisabled() {
+    var creditCardNumber = document.getElementById("creditCardNumber");
+    if (creditCardNumber.disabled == true)
+        return true;
+    else
+        return false;
 }

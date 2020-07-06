@@ -84,6 +84,9 @@ function checkZipCode() {
 		document.getElementById("zipCodeMessage").innerHTML = "Please enter the zip/postal code";
 		return false;
 	}
+	else if (isNaN(zipCodeValidity.value)) {
+		document.getElementById("zipCodeMessage").innerHTML = "Must input numbers";
+	}
 	else {
 		document.getElementById("zipCodeMessage").innerHTML = "";
 		return true;
